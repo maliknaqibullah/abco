@@ -2,19 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-//
-//Route::middleware([
-//    'auth:sanctum',
-//    config('jetstream.auth_session'),
-//    'verified'
-//])->group(function () {
-//
-//
-//});
-Route::get('/migrate',function(){
-   \Artisan::call('cache:clear');
-});
-
 Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/', \App\Http\Livewire\Dashboard\Dashboard::class)->name('dashboard');
@@ -29,7 +16,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('warehouse/{id}', \App\Http\Livewire\Warehouse\ShowWarehouse::class);
     Route::get('permissions', \App\Http\Livewire\AddPermission\AddPermission::class);
     Route::get('user-roles', \App\Http\Livewire\Roles\UserRole::class);
-//    Route::get('transfer-stocks', \App\Http\Livewire\stock\TransferStocks::class);
+    Route::get('transfer-stocks', \App\Http\Livewire\stock\TransferStocks::class);
     Route::get('reports', \App\Http\Livewire\Report\GeneratReport::class);
     Route::get('school-attendance', \App\Http\Livewire\School\AddAttendance::class);
     Route::resource('users', \App\Http\Controllers\UserController::class);
