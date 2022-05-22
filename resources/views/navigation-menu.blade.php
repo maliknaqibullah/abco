@@ -136,7 +136,7 @@
                         </svg>
                         Stocks
                     </a>
-                
+
                     @endcan
                         @can('stock-history')
                     <a href="/stock-history"
@@ -496,7 +496,7 @@
 
         <div class="sticky top-0 z-10 flex-shrink-0 flex h-16 bg-white shadow">
             <button @click="isMobileNavOpen = !isMobileNavOpen" type="button"
-                    class="px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden">
+                    class="px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500 md:hidden">
                 <span class="sr-only">Open sidebar</span>
                 <!-- Heroicon name: outline/menu-alt-2 -->
                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -527,7 +527,7 @@
                 <div class="ml-4 flex items-center md:ml-6">
 
                     <button type="button"
-                            class="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            class="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500">
                         <span class="sr-only">View notifications</span>
                         <!-- Heroicon name: outline/bell -->
                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"

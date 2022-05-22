@@ -151,9 +151,6 @@ class AddSchool extends Component
         $this->distance = '';
         $this->selectedDistrict = '';
         $this->selectedProvince = '';
-
-
-
     }
 
     public function updated($propertyName)

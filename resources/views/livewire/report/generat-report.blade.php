@@ -77,7 +77,7 @@
                             <thead class="bg$-white">
                             <tr>
                                 <td  class="px-6 py-4 whitespace-nowrap">
-                                        <input type="checkbox" name="selected" wire:model="selected" value="{{$order->id}}" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                        <input type="checkbox" name="selected" wire:model="selected" value="{{$order->id}}" class="focus:ring-sky-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
                                     </td>
                                 <th scope="col"
                                     class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -120,7 +120,7 @@
                                 <tr>
                                     <td
                                         class="px-6 py-4 whitespace-nowrap">
-                                        <input type="checkbox" name="selected" wire:model="selected" value="{{$order->id}}" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                        <input type="checkbox" name="selected" wire:model="selected" value="{{$order->id}}" class="focus:ring-sky-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap">
                                         {{ $order->order_date->toFormattedDateString() }}
