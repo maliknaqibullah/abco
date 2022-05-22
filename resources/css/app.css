@@ -1,0 +1,46 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+[x-cloak] { display: none !important; }
+.toggle-bg:after {
+    content: '';
+    @apply absolute top-0.5 left-0.5 bg-white border border-gray-300 rounded-full h-5 w-5 transition shadow-sm;
+}
+input:checked + .toggle-bg:after {
+    transform: translateX(100%);
+    @apply border-white;
+}
+input:checked + .toggle-bg {
+    @apply bg-blue-600 border-blue-600;
+}
+
+.active{
+    @apply bg-gray-900 text-white;
+}
+
+.svg{
+    @apply text-gray-400 group-hover:text-gray-300 mr-3 flex-shrink-0 h-6 w-6;
+}
+.status-active{
+    @apply bg-green-100 text-green-800;
+}
+.status-inActive{
+    @apply bg-red-100 text-red-800;
+}
+.primary-badge{
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800;
+}
+.select-option{
+    @apply capitalize mt-1 block w-full py-3 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 sm:text-sm;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+.btn{
+    @apply inline-flex items-center px-4 py-2 bg-gray-800
+    border
+    border-transparent
+    rounded-md
+    font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition;
+}
